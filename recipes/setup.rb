@@ -15,8 +15,8 @@ end
 file '/home/vagrant/notes' do
    content "This is  notes for kannan"
    action:create
-   owner:kannan
-   group:kannan
+   owner 'kannan'
+   group 'kannan'
 end
 
 file '/etc/motd' do
