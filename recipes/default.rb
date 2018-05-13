@@ -1,4 +1,3 @@
-#
 # Cookbook Name:: workstation
 # Recipe:: default
 #
@@ -6,3 +5,4 @@
 
 #include_recipe 'cookbook::recipe'
 include_recipe 'workstation::setup'
+include_recipe 'workstation::second'

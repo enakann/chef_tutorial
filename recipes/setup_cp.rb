@@ -33,16 +33,8 @@ file '/etc/motd' do
   action:create
 end
 
-template '/home/vagrant/first_python.py' do
-   source 'first.erb'
-   owner 'vagrant'
-   group 'vagrant'
-   action:create
-end
 
-cron 'py_script1' do
-  minute '0,10,15,20,25,30,35,40,45,50,55'
-  hour   '*'
-  command '/home/vagrant/first_python.py >> /home/vagrant/log'
-  user 'vagrant'
+template '/home/vagrant/first.py' do
+    source 'first.erb'
+    action:create
 end
